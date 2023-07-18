@@ -12,7 +12,7 @@ if [ -z "$(git log HEAD..origin/master --oneline)" ]; then
 		
 		mkdir "$1"
 		cd "$1"
-		java -Xmx1024M -jar ../BuildTools.jar --rev "$1" -Xmx1024M
+		java -Xmx1024M -jar ../BuildTools.jar --rev "$1" 
 	fi
 else
 	echo "It looks like there are incomming updates to this repository. Pulling those changes now."
